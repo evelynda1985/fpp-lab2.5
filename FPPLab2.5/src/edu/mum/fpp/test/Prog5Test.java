@@ -16,6 +16,7 @@ public class Prog5Test {
 	//We need:
 	//		Class Prog5: reverse method
 	//		Class App: to run the code in the main
+	//Test case #1: receive a string and reverse it
 	
 
 	@Test
@@ -28,5 +29,7 @@ public class Prog5Test {
 	}
 	
 	//Step 3: Refactor the code and accomplish the requirements
+	//Test case2: receive string by console and create the Prog5 object with that
+	
 
 }
