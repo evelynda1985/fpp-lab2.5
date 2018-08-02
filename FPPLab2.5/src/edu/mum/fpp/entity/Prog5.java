@@ -7,7 +7,7 @@ public class Prog5 {
 	//Constructor by default
 	public Prog5() {}
 	
-	//Constructor with arguments
+	//Constructor with arguments for testing purpose
 	public Prog5(String word) {
 		this.word = word;
 	}

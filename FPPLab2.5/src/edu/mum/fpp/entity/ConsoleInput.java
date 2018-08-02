@@ -3,13 +3,15 @@ package edu.mum.fpp.entity;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 public class ConsoleInput {
+	
+	private Prog5 p5 = new Prog5();
 	
 	//constructor by default
 	public ConsoleInput() {	}
 
+	//Read information through console
 	public String getInput() throws IOException {
 		
 		BufferedReader in = null;
@@ -18,8 +20,6 @@ public class ConsoleInput {
 		
 		in = new BufferedReader(new InputStreamReader(System.in));
 		
-		//Scanner sc = new Scanner(System.in);
-		
 		System.out.println("Type the word that you want to reverse:");
 		
 		try {
@@ -27,13 +27,21 @@ public class ConsoleInput {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		finally {
-			in.close();
-		}
 		
 		System.out.println("you wrote: " + input);
 		
 		return input;
+	}
+	
+	//Reverse the word that was input by console
+	public String getReverseInput() throws IOException {
+		
+		String wordToReverse = getInput();
+		
+		String finalWord = p5.getReverse(wordToReverse);
+		
+		return finalWord;
+		
 	}
 
 

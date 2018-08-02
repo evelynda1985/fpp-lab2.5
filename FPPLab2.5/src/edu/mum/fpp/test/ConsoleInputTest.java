@@ -10,6 +10,8 @@ import edu.mum.fpp.entity.ConsoleInput;
 
 public class ConsoleInputTest {
 	
+	ConsoleInput inputInformation = new ConsoleInput();
+	
 	//TDD
 	//Step 1: We requiere:
 	//		class ConsoleInput 
@@ -21,12 +23,38 @@ public class ConsoleInputTest {
 
 	@Test
 	public void testGetInputInformation() throws IOException {
-		
-		ConsoleInput inputInformation = new ConsoleInput();
-		
+				
 		//System.out.println(inputInformation.getInput());
 		
 		assertEquals("Hello", inputInformation.getInput());
+		
+	}
+	
+	//Step 3 Refactor:
+	// Now we need to reverse the word using Prog5 object.
+	//Test case#2: Reverse a word received through console
+	@Test
+	public void testReverseInput() throws IOException {
+		
+		System.out.println("reverse: " + inputInformation.getReverseInput());
+		
+		assertEquals("olleH", inputInformation.getReverseInput());
+		
+	}
+	
+	//Test case#3: Testing smallest words that Hello
+	@Test
+	public void testReverseInputV1() throws IOException {
+		
+		assertEquals("nuf", inputInformation.getReverseInput());
+		
+	}
+	
+	//Test case#4: Testing largest words that Hello
+	@Test
+	public void testReverseInputV2() throws IOException {
+		
+		assertEquals("ainrofilaC", inputInformation.getReverseInput());
 		
 	}
 

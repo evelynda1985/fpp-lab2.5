@@ -29,7 +29,7 @@ public class Prog5Test {
 	}
 	
 	//Step 3: Refactor the code and accomplish the requirements
-	//Test case2: receive string by console and create the Prog5 object with that
+	//For this we need to:
+	//			Create the class ConsoleInputTest Using TDD and create the classes and methods need it.
 	
-
 }
