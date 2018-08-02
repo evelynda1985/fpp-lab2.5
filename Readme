@@ -1,0 +1,16 @@
+Programming Assignment 2-5
+Write a program (called Prog5) that asks the user to input a String. The output is the
+characters of this String in reverse order, which should be written to the console. 
+(For example, if the input string is "Hello", the ouptut string would be "olleH".) 
+(Do not use arrays and do not create a new String object. In particular, 
+you may not use Java library functions that peform the reverse operation for you, 
+such as the reverse functions found in StringBuilder and StringBuffer.)
+
+For this project we use TDD
+I created:
+App Class -> where is the main
+Prog5 Class _> to reverse the word
+ConsoleInput class -> to revese the work entered through console
+
+In the Test Cases you can see the TDD process step by step.
+
