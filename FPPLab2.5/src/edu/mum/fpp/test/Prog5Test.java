@@ -4,13 +4,19 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import edu.mum.fpp.entity.Prog5;
+
 public class Prog5Test {
 	
 	//Using TDD
 	//Step 1: Input Hello we will return olleH
 	//Our test case fail - obviously
 	
-
+	//Step 2: create the classes and method to make this code run!
+	//We need:
+	//		Class Prog5: reverse method
+	//		Class App: to run the code in the main
+	
 
 	@Test
 	public void testReverse() {
@@ -20,5 +26,7 @@ public class Prog5Test {
 		assertEquals("olleH", p5.getReverse("Hello"));
 		
 	}
+	
+	//Step 3: Refactor the code and accomplish the requirements
 
 }
